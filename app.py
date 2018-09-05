@@ -25,8 +25,6 @@ def main():
                                        dtype=float,
                                        index=['input'])
 
-        # input_variables = input_variables[['temperature', 'humidity', 'windspeed']]
-
         prediction = model.predict(input_variables)[0]
     
         return flask.render_template('main.html',
